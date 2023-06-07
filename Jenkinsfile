@@ -16,5 +16,5 @@ pipeline {
 
 def shellGetOutput(cmd)
 {
-    return sh(script: cmd, returnStuout: true).trim()
+    return sh(script: cmd, returnStdout: true).trim()
 }

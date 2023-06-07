@@ -7,7 +7,7 @@ pipeline {
                 script{
                 log_files = shellGetOutput("ls logs_files")
                 if(log_files != null && !log_files.allWhitespace)
-                    archiveArtifacts(artifacts: "logs_files/*.xlsx", fingerprint: true)
+                    archiveArtifacts(artifacts: "logs_files/*.xls", fingerprint: true)
                 }
             }
         }
